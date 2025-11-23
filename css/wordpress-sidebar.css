@@ -1,0 +1,168 @@
+/* WordPress Sidebar CSS - Page Layer Template Optimization */
+/* Color Scheme:
+   - Background: #b2bac4
+   - Text: #e2e2e2
+   - H1, H2: #cfcfd6
+   - H3-H6: #ddbac0
+   - Link: #ddbac0
+   - Hover: #bf677e
+   - Active: #cfcfd6
+   - Border: #e2e2e2
+*/
+
+/* Sidebar Container */
+.sidebar,
+#sidebar,
+.widget-area {
+    background-color: #b2bac4;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Widget Titles */
+.sidebar h4,
+.sidebar h5,
+.sidebar h6,
+.sidebar .widget-title,
+#sidebar h4,
+#sidebar h5,
+#sidebar h6,
+#sidebar .widget-title,
+.widget-area h4,
+.widget-area h5,
+.widget-area h6,
+.widget-area .widget-title {
+    font-family: "Trebuchet MS", "Lucida Grande", sans-serif;
+    color: #ddbac0;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e2e2e2;
+}
+
+/* Widget Text */
+.sidebar p,
+.sidebar .textwidget,
+#sidebar p,
+#sidebar .textwidget,
+.widget-area p,
+.widget-area .textwidget {
+    color: #e2e2e2;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Widget Links */
+.sidebar a,
+#sidebar a,
+.widget-area a {
+    color: #ddbac0 !important;
+    text-decoration: none;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+    border-bottom: 1px solid transparent;
+}
+
+/* Link Hover Effects */
+.sidebar a:hover,
+#sidebar a:hover,
+.widget-area a:hover {
+    color: #bf677e !important;
+    border-bottom: 1px solid #bf677e;
+}
+
+/* Link Active State */
+.sidebar a:active,
+#sidebar a:active,
+.widget-area a:active {
+    color: #cfcfd6 !important;
+}
+
+/* Lists in Sidebar */
+.sidebar ul,
+#sidebar ul,
+.widget-area ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.sidebar li,
+#sidebar li,
+.widget-area li {
+    color: #e2e2e2;
+    padding: 8px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.sidebar li:last-child,
+#sidebar li:last-child,
+.widget-area li:last-child {
+    border-bottom: none;
+}
+
+/* Search Widget */
+.sidebar .search-form,
+#sidebar .search-form,
+.widget-area .search-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.sidebar .search-field,
+#sidebar .search-field,
+.widget-area .search-field {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px 0 0 4px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.sidebar .search-submit,
+#sidebar .search-submit,
+.widget-area .search-submit {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+/* Calendar Widget */
+.sidebar .calendar_wrap table,
+#sidebar .calendar_wrap table,
+.widget-area .calendar_wrap table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sidebar .calendar_wrap th,
+#sidebar .calendar_wrap th,
+.widget-area .calendar_wrap th {
+    background-color: #3d4854;
+    color: #e2e2e2;
+    text-align: center;
+    padding: 5px;
+}
+
+.sidebar .calendar_wrap td,
+#sidebar .calendar_wrap td,
+.widget-area .calendar_wrap td {
+    color: #e2e2e2;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+}
+
+/* Page Layer Template specific optimizations */
+body.page-template-page-layer .sidebar,
+body.page-template-page-layer #sidebar,
+body.page-template-page-layer .widget-area {
+    margin-top: 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
